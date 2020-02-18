@@ -4,8 +4,71 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "20e24d254a52d4fcb38761473e3a45cc",
+    "content-hash": "c7a0434828f38fff64f9d822372b37c2",
     "packages": [
+        {
+            "name": "backpack/backupmanager",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Laravel-Backpack/BackupManager.git",
+                "reference": "02941d3103dc9ef8da14cc07643b4b5684a9f006"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Laravel-Backpack/BackupManager/zipball/02941d3103dc9ef8da14cc07643b4b5684a9f006",
+                "reference": "02941d3103dc9ef8da14cc07643b4b5684a9f006",
+                "shasum": ""
+            },
+            "require": {
+                "backpack/crud": "^4.0.0",
+                "spatie/laravel-backup": "^6.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*",
+                "scrutinizer/ocular": "~1.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Backpack\\BackupManager\\BackupManagerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Backpack\\BackupManager\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Cristian Tabacitu",
+                    "email": "hello@tabacitu.ro",
+                    "homepage": "http://tabacitu.ro",
+                    "role": "Chief Architect & Web Developer"
+                }
+            ],
+            "description": "Admin interface for managing backups in Backpack, on Laravel 5.2+",
+            "homepage": "https://github.com/laravel-backpack/BackupManager",
+            "keywords": [
+                "backpack",
+                "backup",
+                "backupmanager",
+                "dick",
+                "laravel",
+                "tabacitu",
+                "updivision"
+            ],
+            "time": "2019-12-19T11:20:16+00:00"
+        },
         {
             "name": "backpack/crud",
             "version": "4.0.31",
@@ -92,6 +155,391 @@
                 "update"
             ],
             "time": "2020-01-03T08:22:05+00:00"
+        },
+        {
+            "name": "backpack/logmanager",
+            "version": "3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Laravel-Backpack/LogManager.git",
+                "reference": "a30e1e3d2d7aeca014bd951c1a7a47c3b74635b4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Laravel-Backpack/LogManager/zipball/a30e1e3d2d7aeca014bd951c1a7a47c3b74635b4",
+                "reference": "a30e1e3d2d7aeca014bd951c1a7a47c3b74635b4",
+                "shasum": ""
+            },
+            "require": {
+                "backpack/crud": "^4.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*",
+                "scrutinizer/ocular": "~1.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Backpack\\LogManager\\LogManagerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Backpack\\LogManager\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Cristian Tabacitu",
+                    "email": "hello@tabacitu.ro",
+                    "homepage": "http://tabacitu.ro",
+                    "role": "Developer"
+                }
+            ],
+            "description": "An interface to preview, download and delete Laravel log files.",
+            "homepage": "https://github.com/laravel-backpack/LogManager",
+            "keywords": [
+                "backpack",
+                "laravel",
+                "log interface",
+                "log manager",
+                "logs"
+            ],
+            "time": "2020-01-03T07:18:16+00:00"
+        },
+        {
+            "name": "backpack/menucrud",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Laravel-Backpack/MenuCRUD.git",
+                "reference": "8b4e9b9d4780d72853caf80b9256dd4da6a14537"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Laravel-Backpack/MenuCRUD/zipball/8b4e9b9d4780d72853caf80b9256dd4da6a14537",
+                "reference": "8b4e9b9d4780d72853caf80b9256dd4da6a14537",
+                "shasum": ""
+            },
+            "require": {
+                "backpack/crud": "^4.0.0",
+                "backpack/pagemanager": "^2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*",
+                "scrutinizer/ocular": "~1.1",
+                "squizlabs/php_codesniffer": "~2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Backpack\\MenuCRUD\\MenuCRUDServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Backpack\\MenuCRUD\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Cristian Tabacitu",
+                    "email": "hello@tabacitu.ro",
+                    "homepage": "http://tabacitu.ro",
+                    "role": "Developer"
+                }
+            ],
+            "description": "An admin panel for menu items, using Backpack\\CRUD on Laravel 6.",
+            "homepage": "https://github.com/backpack/MenuCRUD",
+            "keywords": [
+                "MenuCRUD",
+                "backpack"
+            ],
+            "time": "2019-10-04T12:29:27+00:00"
+        },
+        {
+            "name": "backpack/newscrud",
+            "version": "3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Laravel-Backpack/NewsCRUD.git",
+                "reference": "c72649df6c878e8e2702eea740edde21feb26981"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Laravel-Backpack/NewsCRUD/zipball/c72649df6c878e8e2702eea740edde21feb26981",
+                "reference": "c72649df6c878e8e2702eea740edde21feb26981",
+                "shasum": ""
+            },
+            "require": {
+                "backpack/crud": "^4.0.0",
+                "cviebrock/eloquent-sluggable": "^6.0||4.8"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*",
+                "scrutinizer/ocular": "~1.1",
+                "squizlabs/php_codesniffer": "~2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Backpack\\NewsCRUD\\NewsCRUDServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Backpack\\NewsCRUD\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Cristian Tabacitu",
+                    "email": "hello@tabacitu.ro",
+                    "homepage": "http://tabacitu.ro",
+                    "role": "Developer"
+                }
+            ],
+            "description": "An admin panel for news with categories and tags, using Backpack\\CRUD on Laravel 5.",
+            "homepage": "https://github.com/Laravel-Backpack/NewsCRUD",
+            "keywords": [
+                "NewsCRUD",
+                "backpack"
+            ],
+            "time": "2019-12-17T09:22:14+00:00"
+        },
+        {
+            "name": "backpack/pagemanager",
+            "version": "2.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Laravel-Backpack/PageManager.git",
+                "reference": "5600bac48fe6ec70005bcbf7231aad176e2db1f5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Laravel-Backpack/PageManager/zipball/5600bac48fe6ec70005bcbf7231aad176e2db1f5",
+                "reference": "5600bac48fe6ec70005bcbf7231aad176e2db1f5",
+                "shasum": ""
+            },
+            "require": {
+                "backpack/crud": "^4.0.0",
+                "cviebrock/eloquent-sluggable": "^6.0||4.8"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*",
+                "scrutinizer/ocular": "~1.1",
+                "squizlabs/php_codesniffer": "~2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Backpack\\PageManager\\PageManagerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Backpack\\PageManager\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Cristian Tabacitu",
+                    "email": "hello@tabacitu.ro",
+                    "homepage": "http://tabacitu.ro",
+                    "role": "Architect & Developer"
+                }
+            ],
+            "description": "Create admin panels for presentation websites on Laravel, using page templates and Backpack\\CRUD.",
+            "homepage": "https://github.com/laravel-backpack/PageManager",
+            "keywords": [
+                "Content management system",
+                "admin panel",
+                "administer pages",
+                "backpack",
+                "cms",
+                "crud",
+                "manage pages",
+                "pagemanager",
+                "presentation pages",
+                "presentation website",
+                "wordpress"
+            ],
+            "time": "2019-12-19T11:22:06+00:00"
+        },
+        {
+            "name": "backpack/permissionmanager",
+            "version": "5.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Laravel-Backpack/PermissionManager.git",
+                "reference": "4ddfbc91c1536c3e0a7a4d0379ebfe24eb859a46"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Laravel-Backpack/PermissionManager/zipball/4ddfbc91c1536c3e0a7a4d0379ebfe24eb859a46",
+                "reference": "4ddfbc91c1536c3e0a7a4d0379ebfe24eb859a46",
+                "shasum": ""
+            },
+            "require": {
+                "backpack/crud": "^4.0.0",
+                "spatie/laravel-permission": "^3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*",
+                "scrutinizer/ocular": "~1.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Backpack\\PermissionManager\\PermissionManagerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Backpack\\PermissionManager\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Marius Constantin",
+                    "email": "marius@updivision.com",
+                    "homepage": "http://www.updivision.com",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Cristian Tabacitu",
+                    "email": "hello@tabacitu.ro",
+                    "homepage": "http://www.tabacitu.ro",
+                    "role": "Chief Architect"
+                }
+            ],
+            "description": "Users and permissions management interface for Laravel 5 using Backpack CRUD.",
+            "homepage": "https://github.com/laravel-backpack/permissionmanager",
+            "keywords": [
+                "backpack",
+                "backpack permission",
+                "backpack roles",
+                "backpack user management",
+                "dick",
+                "dick permission",
+                "laravel backpack",
+                "manage permission",
+                "manage roles",
+                "manage users",
+                "tabacitu",
+                "updivision",
+                "users roles admin"
+            ],
+            "time": "2020-01-15T15:50:58+00:00"
+        },
+        {
+            "name": "backpack/settings",
+            "version": "3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Laravel-Backpack/Settings.git",
+                "reference": "4232f8b8671bfdc239ccfe7fb4f77e9ecda9bde6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Laravel-Backpack/Settings/zipball/4232f8b8671bfdc239ccfe7fb4f77e9ecda9bde6",
+                "reference": "4232f8b8671bfdc239ccfe7fb4f77e9ecda9bde6",
+                "shasum": ""
+            },
+            "require": {
+                "backpack/crud": "^4.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*",
+                "scrutinizer/ocular": "~1.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Backpack\\Settings\\SettingsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Backpack\\Settings\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Cristian Tabacitu",
+                    "email": "hello@tabacitu.ro",
+                    "homepage": "http://www.tabacitu.ro",
+                    "role": "Chief Architect & Lead Developer"
+                }
+            ],
+            "description": "Application settings interface for Laravel 5 using Backpack CRUD.",
+            "homepage": "https://github.com/laravel-backpack/settings",
+            "keywords": [
+                "backpack",
+                "backpack settings",
+                "dick",
+                "dick settings",
+                "laravel backpack",
+                "manage settings",
+                "settings admin",
+                "tabacitu",
+                "updivision"
+            ],
+            "time": "2019-12-19T11:25:14+00:00"
         },
         {
             "name": "barryvdh/elfinder-flysystem-driver",
@@ -207,6 +655,71 @@
             "time": "2019-10-27T18:56:41+00:00"
         },
         {
+            "name": "cocur/slugify",
+            "version": "v3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cocur/slugify.git",
+                "reference": "d41701efe58ba2df9cae029c3d21e1518cc6780e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cocur/slugify/zipball/d41701efe58ba2df9cae029c3d21e1518cc6780e",
+                "reference": "d41701efe58ba2df9cae029c3d21e1518cc6780e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "laravel/framework": "~5.1",
+                "latte/latte": "~2.2",
+                "league/container": "^2.2.0",
+                "mikey179/vfsstream": "~1.6",
+                "mockery/mockery": "~0.9",
+                "nette/di": "~2.2",
+                "phpunit/phpunit": "~4.8.36|~5.2",
+                "pimple/pimple": "~1.1",
+                "plumphp/plum": "~0.1",
+                "silex/silex": "~1.3",
+                "symfony/config": "~2.4|~3.0|~4.0",
+                "symfony/dependency-injection": "~2.4|~3.0|~4.0",
+                "symfony/http-kernel": "~2.4|~3.0|~4.0",
+                "twig/twig": "~1.26|~2.0",
+                "zendframework/zend-modulemanager": "~2.2",
+                "zendframework/zend-servicemanager": "~2.2",
+                "zendframework/zend-view": "~2.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Cocur\\Slugify\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ivo Bathke",
+                    "email": "ivo.bathke@gmail.com"
+                },
+                {
+                    "name": "Florian Eckerstorfer",
+                    "email": "florian@eckerstorfer.co",
+                    "homepage": "https://florian.ec"
+                }
+            ],
+            "description": "Converts a string into a slug.",
+            "keywords": [
+                "slug",
+                "slugify"
+            ],
+            "time": "2019-01-31T20:38:55+00:00"
+        },
+        {
             "name": "creativeorange/gravatar",
             "version": "v1.0.13",
             "source": {
@@ -259,6 +772,69 @@
                 "laravel"
             ],
             "time": "2019-08-29T20:00:13+00:00"
+        },
+        {
+            "name": "cviebrock/eloquent-sluggable",
+            "version": "6.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cviebrock/eloquent-sluggable.git",
+                "reference": "20f39ae0eeb54c73756834570be7f514fa350cbb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cviebrock/eloquent-sluggable/zipball/20f39ae0eeb54c73756834570be7f514fa350cbb",
+                "reference": "20f39ae0eeb54c73756834570be7f514fa350cbb",
+                "shasum": ""
+            },
+            "require": {
+                "cocur/slugify": "^3.2",
+                "illuminate/config": "^6.0",
+                "illuminate/database": "^6.0",
+                "illuminate/support": "^6.0",
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "limedeck/phpunit-detailed-printer": "^5.0",
+                "mockery/mockery": "^1.2.3",
+                "orchestra/database": "4.*",
+                "orchestra/testbench": "4.*",
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Cviebrock\\EloquentSluggable\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Cviebrock\\EloquentSluggable\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Colin Viebrock",
+                    "email": "colin@viebrock.ca"
+                }
+            ],
+            "description": "Easy creation of slugs for your Eloquent models in Laravel",
+            "homepage": "https://github.com/cviebrock/eloquent-sluggable",
+            "keywords": [
+                "eloquent",
+                "eloquent-sluggable",
+                "laravel",
+                "lumen",
+                "slug",
+                "sluggable"
+            ],
+            "time": "2019-10-10T04:32:04+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -725,6 +1301,68 @@
                 "schedule"
             ],
             "time": "2019-03-31T00:38:28+00:00"
+        },
+        {
+            "name": "eduardoarandah/usermanager",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/eduardoarandah/UserManager.git",
+                "reference": "00c85840c2f065ab065b48b5ea34e3931f4ecb50"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/eduardoarandah/UserManager/zipball/00c85840c2f065ab065b48b5ea34e3931f4ecb50",
+                "reference": "00c85840c2f065ab065b48b5ea34e3931f4ecb50",
+                "shasum": ""
+            },
+            "require": {
+                "backpack/crud": "^4.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*",
+                "scrutinizer/ocular": "~1.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "EduardoArandaH\\UserManager\\UserManagerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "EduardoArandaH\\UserManager\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Eduardo Aranda",
+                    "email": "eduardoarandah@gmail.com",
+                    "homepage": "https://eduardoarandah.github.io/"
+                }
+            ],
+            "description": "Users management interface for Laravel 6 using Backpack CRUD.",
+            "homepage": "https://github.com/eduardoarandah/UserManager",
+            "keywords": [
+                "Eduardo Aranda",
+                "User management",
+                "backpack",
+                "backpack user management",
+                "laravel backpack",
+                "laravel user management",
+                "manage users",
+                "users admin"
+            ],
+            "time": "2019-12-04T16:12:52+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -2543,6 +3181,245 @@
                 "uuid"
             ],
             "time": "2019-12-17T08:18:51+00:00"
+        },
+        {
+            "name": "spatie/db-dumper",
+            "version": "2.15.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/db-dumper.git",
+                "reference": "ccb7dd7557cd119b21ea853a893da4d1b0ff08b6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/db-dumper/zipball/ccb7dd7557cd119b21ea853a893da4d1b0ff08b6",
+                "reference": "ccb7dd7557cd119b21ea853a893da4d1b0ff08b6",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2",
+                "symfony/process": "^4.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.0|^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\DbDumper\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Dump databases",
+            "homepage": "https://github.com/spatie/db-dumper",
+            "keywords": [
+                "database",
+                "db-dumper",
+                "dump",
+                "mysqldump",
+                "spatie"
+            ],
+            "time": "2019-11-11T10:40:42+00:00"
+        },
+        {
+            "name": "spatie/laravel-backup",
+            "version": "6.7.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-backup.git",
+                "reference": "9526cd53072644de6e4850cffaf79376c9a4f2d0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-backup/zipball/9526cd53072644de6e4850cffaf79376c9a4f2d0",
+                "reference": "9526cd53072644de6e4850cffaf79376c9a4f2d0",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^5.8.15|^6.0",
+                "illuminate/contracts": "^5.8.15|^6.0",
+                "illuminate/events": "^5.8.15|^6.0",
+                "illuminate/filesystem": "^5.8.15|^6.0",
+                "illuminate/notifications": "^5.8.15|^6.0",
+                "illuminate/support": "^5.8.15|^6.0",
+                "league/flysystem": "^1.0.49",
+                "php": "^7.2",
+                "spatie/db-dumper": "^2.12",
+                "spatie/temporary-directory": "^1.1",
+                "symfony/finder": "^4.2"
+            },
+            "require-dev": {
+                "laravel/slack-notification-channel": "^1.0",
+                "league/flysystem-aws-s3-v3": "^1.0",
+                "mockery/mockery": "^1.0",
+                "orchestra/testbench": "3.8.*|4.*",
+                "phpunit/phpunit": "^8.4"
+            },
+            "suggest": {
+                "laravel/slack-notification-channel": "Required for sending notifications via Slack"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\Backup\\BackupServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Backup\\": "src"
+                },
+                "files": [
+                    "src/Helpers/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A Laravel package to backup your application",
+            "homepage": "https://github.com/spatie/laravel-backup",
+            "keywords": [
+                "backup",
+                "database",
+                "laravel-backup",
+                "spatie"
+            ],
+            "time": "2019-12-12T13:39:26+00:00"
+        },
+        {
+            "name": "spatie/laravel-permission",
+            "version": "3.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-permission.git",
+                "reference": "fe0573ddb6fd95378eec67e401882564db830312"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/fe0573ddb6fd95378eec67e401882564db830312",
+                "reference": "fe0573ddb6fd95378eec67e401882564db830312",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/auth": "^5.8|^6.0",
+                "illuminate/container": "^5.8|^6.0",
+                "illuminate/contracts": "^5.8|^6.0",
+                "illuminate/database": "^5.8|^6.0",
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^3.8|^4.0",
+                "phpunit/phpunit": "^8.0",
+                "predis/predis": "^1.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\Permission\\PermissionServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Permission\\": "src"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Permission handling for Laravel 5.8 and up",
+            "homepage": "https://github.com/spatie/laravel-permission",
+            "keywords": [
+                "acl",
+                "laravel",
+                "permission",
+                "permissions",
+                "rbac",
+                "roles",
+                "security",
+                "spatie"
+            ],
+            "time": "2019-12-28T13:22:00+00:00"
+        },
+        {
+            "name": "spatie/temporary-directory",
+            "version": "1.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/temporary-directory.git",
+                "reference": "fcb127e615700751dac2aefee0ea2808ff3f5bb1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/temporary-directory/zipball/fcb127e615700751dac2aefee0ea2808ff3f5bb1",
+                "reference": "fcb127e615700751dac2aefee0ea2808ff3f5bb1",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\TemporaryDirectory\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Vanderbist",
+                    "email": "alex@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Easily create, use and destroy temporary directories",
+            "homepage": "https://github.com/spatie/temporary-directory",
+            "keywords": [
+                "spatie",
+                "temporary-directory"
+            ],
+            "time": "2019-12-15T18:52:09+00:00"
         },
         {
             "name": "studio-42/elfinder",
@@ -6239,6 +7116,73 @@
             ],
             "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
             "time": "2019-06-13T22:48:21+00:00"
+        },
+        {
+            "name": "webfactor/laravel-generators",
+            "version": "3.3.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webfactor/laravel-generators.git",
+                "reference": "e17c19274c77fc89927b37cf93d132abec2837fe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webfactor/laravel-generators/zipball/e17c19274c77fc89927b37cf93d132abec2837fe",
+                "reference": "e17c19274c77fc89927b37cf93d132abec2837fe",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "~5.5.0|~5.6.0|~5.7.0|~5.8.0|~6.0",
+                "illuminate/support": "~5.5.0|~5.6.0|~5.7.0|~5.8.0|~6.0",
+                "php": "~7.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0",
+                "squizlabs/php_codesniffer": "^2.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Webfactor\\Laravel\\Generators\\GeneratorsServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-master": "3.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webfactor\\Laravel\\Generators\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Swonke",
+                    "email": "thomas.swonke@webfactor.de",
+                    "homepage": "http://webfactor.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Oliver Ziegler",
+                    "email": "oliver.ziegler@webfactor.de",
+                    "homepage": "http://webfactor.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel generators for quickly creating entities.",
+            "homepage": "https://github.com/webfactor/laravel-generators",
+            "keywords": [
+                "Webfactor",
+                "backpack",
+                "generators",
+                "laravel"
+            ],
+            "time": "2019-11-11T13:39:37+00:00"
         },
         {
             "name": "webmozart/assert",

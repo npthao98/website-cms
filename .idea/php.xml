@@ -110,6 +110,21 @@
       <path value="$PROJECT_DIR$/vendor/studio-42/elfinder" />
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-elfinder" />
       <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/backpack/permissionmanager" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-permission" />
+      <path value="$PROJECT_DIR$/vendor/backpack/settings" />
+      <path value="$PROJECT_DIR$/vendor/cocur/slugify" />
+      <path value="$PROJECT_DIR$/vendor/cviebrock/eloquent-sluggable" />
+      <path value="$PROJECT_DIR$/vendor/backpack/pagemanager" />
+      <path value="$PROJECT_DIR$/vendor/backpack/menucrud" />
+      <path value="$PROJECT_DIR$/vendor/backpack/newscrud" />
+      <path value="$PROJECT_DIR$/vendor/backpack/logmanager" />
+      <path value="$PROJECT_DIR$/vendor/backpack/backupmanager" />
+      <path value="$PROJECT_DIR$/vendor/spatie/db-dumper" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-backup" />
+      <path value="$PROJECT_DIR$/vendor/spatie/temporary-directory" />
+      <path value="$PROJECT_DIR$/vendor/eduardoarandah/usermanager" />
+      <path value="$PROJECT_DIR$/vendor/webfactor/laravel-generators" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />

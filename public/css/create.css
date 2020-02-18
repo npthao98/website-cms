@@ -1,0 +1,38 @@
+.nav-tabs>li.active>a{
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+}
+.nav-tabs>li>a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+.nav-tabs>li>a:hover {
+    border-color: #eee #eee #ddd;
+}
+.nav>li>a:focus,.nav>li>a:hover {
+    text-decoration: none;
+    background-color: #eee;
+}
+#main{
+    display: block;
+}
+#meta{
+    display: none;
+}
+.fade:not(.show) {
+    opacity: 1;
+}
