@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests;
 
-class ArticleRequest extends \Backpack\CRUD\app\Http\Requests\CrudRequest
+class GalleryRequest extends \Backpack\CRUD\app\Http\Requests\CrudRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -25,11 +25,11 @@ class ArticleRequest extends \Backpack\CRUD\app\Http\Requests\CrudRequest
         return [
             'title' => 'required|min:2|max:255',
             'slug' => 'unique:articles,slug,'.\Request::get('id'),
-            'content' => 'required|min:2',
+            'desc' => 'required|min:2',
 //            'type' => 'required',
-            'date' => 'required|date',
-            'status' => 'required',
-            'category_id' => 'required',
+//            'date' => 'required|date',
+//            'status' => 'required',
+//            'category_id' => 'required',
         ];
     }
 
