@@ -19,7 +19,6 @@ class ArticleCrudController extends CrudController
     use \Backpack\CRUD\app\Http\Controllers\Operations\BulkDeleteOperation;
     use \Backpack\CRUD\app\Http\Controllers\Operations\ShowOperation;
 
-
     public function setup()
     {
         /*
@@ -47,7 +46,7 @@ class ArticleCrudController extends CrudController
 //            $this->crud->addColumn([
 //                'name' => 'image',
 //                'label' => 'Image',
-//                'type' => 'browse',
+//                'type' => 'view_image_browse',
 //            ]);
             $this->crud->addColumn('status');
             $this->crud->addColumn([
@@ -105,7 +104,7 @@ class ArticleCrudController extends CrudController
 
             $this->crud->addField([
                 'label' => '',
-                'name' => ['type', 'content', 'image', 'images', 'video'],
+                'name' => ['type', 'content', 'image', 'gallery_id', 'video'],
                 'type' => 'content_type',
                 'tab'  => 'main',
                 'field' => [   // radio
@@ -135,22 +134,23 @@ class ArticleCrudController extends CrudController
                         ],
 
                     ],
-//                    'gallery' => [
-//                        'view' => 'crud::fields.select2',
-//                        'field' => [
-//                            'label' => 'Gallery',
-//                            'name' => 'gallery_id',
-//                            'type' => 'select2',
-//                            'entity' => 'category',
-//                            'attribute' => 'name',
-//                        ]
-//                    ],
+                    'gallery' => [
+                        'view' => 'crud::fields.select2_avatar',
+                        'field' => [
+                            'label' => 'Gallery',
+                            'name' => 'gallery_id',
+                            'type' => 'select2_avatar',
+                            'entity' => 'gallery',
+                            'model' => 'App\Models\Gallery',
+                            'attribute' => 'title',
+                        ]
+                    ],
                     'infographics' => [
-                        'view' => 'crud::fields.browse',
+                        'view' => 'crud::fields.browse_multiple',
                         'field' => [
                             'label' => 'Infographics',
                             'name' => 'image',
-                            'type' => 'browse'
+                            'type' => 'browse_multiple'
                         ]
 
                     ],
@@ -167,14 +167,6 @@ class ArticleCrudController extends CrudController
 
                 ]
             ]);
-//            $this->crud->addField([
-//                'label' => 'Gallery',
-//                'name' => 'gallery_id',
-//                'type' => 'select2',
-//                'entity' => 'category',
-//                'attribute' => 'name',
-//                'tab' => 'main',
-//            ]);
             $this->crud->addField([
                 'label' => 'Category',
                 'type' => 'select2',
@@ -183,6 +175,15 @@ class ArticleCrudController extends CrudController
                 'attribute' => 'name',
                 'tab' => 'main',
             ]);
+//            $this->crud->addField([
+//                'label' => 'Gallery2',
+//                'name' => 'gallery_id',
+//                'type' => 'select2_avatar',
+////                'type' => 'select2',
+//                'entity' => 'gallery',
+//                'attribute' => 'title',
+//                'tab' => 'main',
+//            ]);
             $this->crud->addField([
                 'label' => 'Tags',
                 'type' => 'select2_multiple',

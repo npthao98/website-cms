@@ -40,6 +40,11 @@ class GalleryCrudController extends CrudController
 
             $this->crud->addColumn('title');
             $this->crud->addColumn('desc');
+            $this->crud->addColumn([
+                'name' => 'avatar',
+                'label' => 'Avatar',
+                'type' => 'image',
+            ]);
 //            $this->crud->addColumn([
 //                'name' => 'images',
 //                'label' => 'Images',
@@ -80,6 +85,11 @@ class GalleryCrudController extends CrudController
                 'disabled' => 'disabled'
             ]);
             $this->crud->addField([
+                'name' => 'avatar',
+                'label' => 'Avatar',
+                'type' => 'image',
+            ]);
+            $this->crud->addField([
                'name' => 'images',
                'label' => 'Images',
                'type' => 'browse_multiple',
@@ -106,47 +116,47 @@ class GalleryCrudController extends CrudController
     {
     }
 
-    public function store()
-    {
-        $this->crud->hasAccessOrFail('create');
-
-        // execute the FormRequest authorization and validation, if one is required
-        $request = $this->crud->validateRequest();
-
-//        dd($this->crud->getStrippedSaveRequest());
-        // insert item in the db
-        $item = $this->crud->create($this->crud->getStrippedSaveRequest());
+//    public function store()
+//    {
+//        $this->crud->hasAccessOrFail('create');
+//
+//        // execute the FormRequest authorization and validation, if one is required
+//        $request = $this->crud->validateRequest();
+//
+////        dd($this->crud->getStrippedSaveRequest());
+//        // insert item in the db
+//        $item = $this->crud->create($this->crud->getStrippedSaveRequest());
 //        dd($item);
-        $this->data['entry'] = $this->crud->entry = $item;
-
-        // show a success message
-        \Alert::success(trans('backpack::crud.insert_success'))->flash();
-
-        // save the redirect choice for next time
-        $this->crud->setSaveAction();
-
-        return $this->crud->performSaveAction($item->getKey());
-    }
-    public function update()
-    {
-        $this->crud->hasAccessOrFail('update');
-
-        // execute the FormRequest authorization and validation, if one is required
-        $request = $this->crud->validateRequest();
-//        dd($this->crud->getStrippedSaveRequest());
-        // update the row in the db
-        $item = $this->crud->update($request->get($this->crud->model->getKeyName()),
-            $this->crud->getStrippedSaveRequest());
-        $this->data['entry'] = $this->crud->entry = $item;
-
-        // show a success message
-        \Alert::success(trans('backpack::crud.update_success'))->flash();
-
-        // save the redirect choice for next time
-        $this->crud->setSaveAction();
-
-        return $this->crud->performSaveAction($item->getKey());
-    }
+//        $this->data['entry'] = $this->crud->entry = $item;
+//
+//        // show a success message
+//        \Alert::success(trans('backpack::crud.insert_success'))->flash();
+//
+//        // save the redirect choice for next time
+//        $this->crud->setSaveAction();
+//
+//        return $this->crud->performSaveAction($item->getKey());
+//    }
+//    public function update()
+//    {
+//        $this->crud->hasAccessOrFail('update');
+//
+//        // execute the FormRequest authorization and validation, if one is required
+//        $request = $this->crud->validateRequest();
+////        dd($this->crud->getStrippedSaveRequest());
+//        // update the row in the db
+//        $item = $this->crud->update($request->get($this->crud->model->getKeyName()),
+//            $this->crud->getStrippedSaveRequest());
+//        $this->data['entry'] = $this->crud->entry = $item;
+//
+//        // show a success message
+//        \Alert::success(trans('backpack::crud.update_success'))->flash();
+//
+//        // save the redirect choice for next time
+//        $this->crud->setSaveAction();
+//
+//        return $this->crud->performSaveAction($item->getKey());
+//    }
 }
 
 

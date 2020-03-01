@@ -21,13 +21,13 @@ class Article extends Model{
     protected $primaryKey = 'id';
     public $timestamps = true;
     // protected $guarded = ['id'];
-    protected $fillable = ['slug', 'title','type','images','video' ,'content', 'image', 'status', 'category_id', 'featured', 'date', 'extras'];
+    protected $fillable = ['slug', 'title','type','video' ,'content','gallery_id', 'image', 'status', 'category_id', 'featured', 'date', 'extras'];
     // protected $hidden = [];
     // protected $dates = [];
     protected $casts = [
         'featured'  => 'boolean',
         'date'      => 'date',
-        'images'    => 'array',
+        'image'    => 'array',
 //        'videos'    => 'json_decode',
     ];
 
@@ -61,7 +61,10 @@ class Article extends Model{
     {
         return $this->belongsTo('Backpack\NewsCRUD\app\Models\Category', 'category_id');
     }
-
+    public function gallery()
+    {
+        return $this->belongsTo('App\Models\Gallery', 'gallery_id');
+    }
     public function tags()
     {
         return $this->belongsToMany('Backpack\NewsCRUD\app\Models\Tag', 'article_tag');
@@ -125,4 +128,6 @@ class Article extends Model{
 //                return $value;
 //        }
 //    }
+
+
 }

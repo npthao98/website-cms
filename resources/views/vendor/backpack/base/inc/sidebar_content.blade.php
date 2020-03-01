@@ -10,6 +10,9 @@
         <li class="nav-item"><a class="nav-link" href="{{ backpack_url('category') }}"><i class="nav-icon fa fa-list"></i> Categories</a></li>
         <li class="nav-item"><a class="nav-link" href="{{ backpack_url('tag') }}"><i class="nav-icon fa fa-tag"></i> Tags</a></li>
         <li class="nav-item"><a class="nav-link" href="{{ backpack_url('gallery') }}"><i class="nav-icon fa fa-image"></i> Galleries</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ backpack_url('slide') }}"><i class="nav-icon fa fa-clone"></i> Slides</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ backpack_url('banner') }}"><i class="nav-icon fa fa-file-image-o"></i> Banners</a></li>
+
     </ul>
 </li>
 <li class='nav-item'><a class='nav-link' href='{{ backpack_url('setting') }}'><i class='nav-icon fa fa-cog'></i> <span>Settings</span></a></li>
